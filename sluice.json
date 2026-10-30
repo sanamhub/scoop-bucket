@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0",
+  "description": "Sluice sends a file straight from one computer to another. Nothing is stored in between.",
+  "homepage": "https://github.com/sanamhub/sluice",
+  "license": "MIT OR Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/sanamhub/sluice/releases/download/v0.1.0/sluice-cli-x86_64-pc-windows-msvc.zip",
+      "hash": "3dce228136ee6041f4323d64a1d3359d03bb45752c30305f5d361739d7b49f69",
+      "bin": "sluice.exe"
+    },
+    "arm64": {
+      "url": "https://github.com/sanamhub/sluice/releases/download/v0.1.0/sluice-cli-aarch64-pc-windows-msvc.zip",
+      "hash": "ac50e6aca2b53ae450a9e32340d7e1c8dc7bedf1f8b624c10ecefcafa2e11a56",
+      "bin": "sluice.exe"
+    }
+  },
+  "checkver": {
+    "github": "https://github.com/sanamhub/sluice"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": { "url": "https://github.com/sanamhub/sluice/releases/download/v$version/sluice-cli-x86_64-pc-windows-msvc.zip" },
+      "arm64": { "url": "https://github.com/sanamhub/sluice/releases/download/v$version/sluice-cli-aarch64-pc-windows-msvc.zip" }
+    }
+  }
+}
